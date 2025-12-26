@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>استلم جهازك الجديد</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            /* خلفية داكنة فخمة */
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 20px;
+            overflow-y: auto; /* السماح بالتمرير إذا كان المحتوى طويلاً */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        /* صورة الشعار */
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 15px;
+            background-color: #fff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .title {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+
+        /* زر الواتساب الرئيسي */
+        .link-card {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(37, 211, 102, 0.2); /* خلفية خضراء خفيفة */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: 1px solid rgba(37, 211, 102, 0.4);
+            margin-bottom: 25px; /* مسافة بين الزر والمربع الجديد */
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .link-card:active {
+            transform: scale(0.97);
+        }
+
+        .link-card i {
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+
+        /* تنسيق مربع العرض الجديد */
+        .promo-box {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: right;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .promo-title {
+            color: #ffcc00; /* لون ذهبي للعنوان */
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 10px;
+        }
+
+        .promo-list {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+
+        .promo-list li {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .promo-list li i {
+            color: #4facfe;
+            margin-left: 8px;
+            font-size: 0.8rem;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .cr-number {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed rgba(255,255,255,0.1);
+        }
+
+        /* حركة النبض */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .pulse-icon {
+            animation: pulse 2s infinite;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="iconn.png" alt="Logo" class="profile-img">
+        
+        <h1 class="title"> سلطان للأجهرة الإلكترونية </h1>
+        <p class="subtitle">حلول تمويلية ميسرة للأجهزة</p>
+
+        <a href="https://wa.me/966534100325" class="link-card">
+            <i class="fab fa-whatsapp pulse-icon"></i>
+            <span>اضغط هنا للتواصل واتساب</span>
+        </a>
+
+        <div class="promo-box">
+            <div class="promo-title">
+                استلم جهازك الجديد بدون دفعة اولى !!
+            </div>
+            <ul class="promo-list">
+                <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>تقدر تاخذ الى <span class="highlight">3 اجهزة</span></span>
+                </li>
+                <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>دفعات ميسرة تمتد الى <span class="highlight">36 شهر !</span></span>
+                </li>
+                <li>
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>أو استبدل الاجهزة <span class="highlight">بالكاش</span></span>
+                </li>
+            </ul>
+            
+            <div class="cr-number">
+                سجل تجاري: 7050012348
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
